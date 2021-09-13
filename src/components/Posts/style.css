@@ -14,25 +14,3 @@
     order:3;
   }
 }
-
-.post {
-  height:160px;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  display:flex;
-  align-items: flex-end;
-  padding:15px;
-  border-radius:10px;
-  text-decoration: none;
-  transition: .3s ease-in-out;
-}
-
-.post:hover {
-  transform: translateY(-10px);
-}
-
-.title {
-  color:white;
-  font-weight: 600;
-}

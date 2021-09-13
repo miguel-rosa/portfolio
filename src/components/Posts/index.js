@@ -1,27 +1,22 @@
 import React from "react";
+import Post from "./components/Post";
 import "./style.css";
 const Posts = ({
   posts
 }) => {
-  return (
+  return posts?.length && (
     <section className="posts">
       {
-        posts.map(({
-          background,
-          link,
-          title
-        }, index) => (
-          <a
-            key={index}
-            style={{ backgroundImage: `url(${background})`}}
-            className="post"
-            href={link}
-          >
-            <h3 className="title">
-              {title}
-            </h3>
-          </a>
-        ))
+        posts.map((post, index) => {
+          return(
+            <Post 
+              background={post.urlToImage}
+              title={post.description}
+              link={post.url}
+              key={index}
+            />
+          )
+        })
       }
     </section>
   )
