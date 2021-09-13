@@ -1,24 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import data from "./data.json";
+import "./App.css";
 
-function App() {
+import Hero from "./components/Hero";
+import Posts from "./components/Posts";
+import Navigation from "./components/Navigation";
+
+const App = () => {
+  console.log("data", data);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+   <main className="main">
+      <Hero {...data.user}/>
+      <Posts posts={data.posts}/>
+      <Navigation {...data.navigation}/>
+   </main>
   );
 }
 
