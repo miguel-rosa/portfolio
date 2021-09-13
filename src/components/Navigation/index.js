@@ -12,15 +12,15 @@ const Navigation = ({
   return (
     <section className="navigation">
       <div className="float">
-        <a className="link" href={whatsapp}>
+        <a className="link" href={`https://wa.me/${whatsapp}`}>
          <img className="icon" src={whatsappIcon} alt="Whatsapp"/>
           <span className="text">Whatsapp</span>
         </a>
-        <a className="link" href={phone}>
+        <a className="link" href={`$tel:${phone}`}>
           <img className="icon" src={phoneIcon} alt="Phone"/>
           <span className="text">Phone</span>
         </a>
-        <a className="link" href={email}>
+        <a className="link" href={`mailto:${email}`}>
           <img className="icon" src={emailIcon} alt="Email"/>
           <span className="text">Email</span>
         </a>
