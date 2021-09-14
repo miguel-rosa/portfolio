@@ -8,11 +8,13 @@ const Posts = ({
   
   return (
     <>
-    <nav>
+    <nav className="tabs">
       {content.map(({title}, index) => (
         <button
           key={index}
-          onClick={() => setSelectedContent(index)}>
+          onClick={() => setSelectedContent(index)}
+          className={`tab ${index === selectedContent ? "tab--active" : "tab--inactive"}`}
+        >
           {title}
         </button>
       ))}

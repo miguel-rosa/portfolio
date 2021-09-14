@@ -11,7 +11,6 @@
   .navigation {
     width:400px;
     position: static;
-    order:2;
     margin-top:20px;
   }
 }
