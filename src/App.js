@@ -10,8 +10,8 @@ const App = () => {
   return (
    <main className="main">
       <Hero {...data.user}/>
-      <Posts posts={data.posts}/>
       <Navigation {...data.navigation}/>
+      <Posts content={data.content}/>
    </main>
   );
 }

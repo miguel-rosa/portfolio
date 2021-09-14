@@ -1,12 +1,25 @@
-import React from "react";
+import React, {useState} from "react";
 import "./style.css";
 const Posts = ({
-  posts
+  content
 }) => {
+
+  const [selectedContent, setSelectedContent] = useState(0);
+  
   return (
+    <>
+    <nav>
+      {content.map(({title}, index) => (
+        <button
+          key={index}
+          onClick={() => setSelectedContent(index)}>
+          {title}
+        </button>
+      ))}
+    </nav>
     <section className="posts">
       {
-        posts.map(({
+        content[selectedContent].posts.map(({
           background,
           link,
           title
@@ -24,6 +37,7 @@ const Posts = ({
         ))
       }
     </section>
+    </>
   )
 };
 
