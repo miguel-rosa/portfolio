@@ -28,6 +28,8 @@ const Posts = ({
         }, index) => (
           <a
             key={index}
+            target="_blank"
+            rel="noreferrer"
             style={{ backgroundImage: `url(${background})`}}
             className="post"
             href={link}
