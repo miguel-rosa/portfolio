@@ -16,7 +16,7 @@ const Navigation = ({
          <img className="icon" src={whatsappIcon} alt="Whatsapp"/>
           <span className="text">Whatsapp</span>
         </a>
-        <a className="link" href={`$tel:${phone}`}>
+        <a className="link" href={`tel:${phone}`}>
           <img className="icon" src={phoneIcon} alt="Phone"/>
           <span className="text">Phone</span>
         </a>
