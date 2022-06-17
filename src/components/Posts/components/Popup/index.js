@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Item from '../Item';
 import "./style.css"
-const Popup = ({background, title,subtitle, popup:{description , company, tags} }) => {
+const Popup = ({background, title,subtitle, popup:{description , company, tags, tagTitle} }) => {
   const [visible, setVisible] = useState(false);
   return (
     <>
@@ -26,7 +26,7 @@ const Popup = ({background, title,subtitle, popup:{description , company, tags} 
               <span className="popup__left__infos">{company}</span>
             </div>
             <div className="popup__left__card">
-              <h4 className="popup__subtitles">Technologies</h4>
+              <h4 className="popup__subtitles">{tagTitle}</h4>
               <div className="popup__tags">
                 {
                   tags.map( (tag) => <span className="popup__tag">{tag}</span>)
