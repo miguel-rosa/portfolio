@@ -141,7 +141,8 @@
     margin-bottom: 20px;
   }
   .popup__left {
-    padding-right:0
+    padding-right:0;
+    margin-bottom:30px;
   }
 }
 
