@@ -2,6 +2,7 @@ import overlayBackground from "./uploads/overlay-background.jpg";
 import profilePicture from "./uploads/profile-picture.jpeg";
 import goBeyond from "./uploads/go-beyond.jpeg";
 import vtexHiringCoders from "./uploads/vtex-hiring-coders.png";
+import frontShop from "./uploads/front-shop.png"
 
 export const data = {
   user: {
@@ -27,7 +28,7 @@ export const data = {
             Consume the REST API`,
             tagTitle: "Technologies",
             tags: ['React Native', 'TypeScript', 'StyledComponents', 'Git Flow', 'Conventional Commits'],
-            company: 'Época Cosméticos from Magazine Luiza'
+            company: 'Época Cosméticos from Magazine Luiza',
           }
          
         },
@@ -44,7 +45,7 @@ export const data = {
             Creation, maintenance, and improvement of tags, triggers, and variables of Google Tag Manager`,
             tagTitle: "Technologies",
             tags: ['ReactJs', 'VTEX IO', 'StyledComponents', 'NodeJS', 'KoaJS', 'TypeScript', 'SSR', 'Git Flow', 'Conventional Commits'],
-            company: 'Motorola Global'
+            company: 'Motorola Global',
           }
          
         },
@@ -61,7 +62,7 @@ export const data = {
             Build pages through the WordPress Headless API REST;<br>`,
             tagTitle: "Technologies",
             tags: ['CSS', 'JavaScript', 'SEO On-Page', 'PHP', 'WordPress'],
-            company: 'Upsites Digital'
+            company: 'Upsites Digital',
           }
          
         },
@@ -76,7 +77,7 @@ export const data = {
             `,
             tagTitle: "Technologies",
             tags: ['CSS', 'JavaScript', 'WordPress'],
-            company: 'GrowthMasters®'
+            company: 'GrowthMasters®',
           }
          
         },
@@ -97,9 +98,8 @@ export const data = {
             `,
             tagTitle: "Teached",
             tags: ['React hooks', 'React Props', 'JSX', 'Create React App', 'npm, yarn'],
-            company: 'Corebiz Global'
-          }
-         
+            company: 'Corebiz Global',
+          }         
         },
         {
           background: vtexHiringCoders,
@@ -111,9 +111,8 @@ export const data = {
             `,
             tagTitle: "Teached",
             tags: ['Basic AWS', 'VTEX IO', 'VTEX Admin', 'React', 'Node'],
-            company: 'VTEX'
+            company: 'VTEX',
           }
-         
         },
       ]
     },
@@ -130,6 +129,62 @@ export const data = {
           link: "https://jealous-pint-4b4.notion.site/Otimizando-processos-com-c-digo-ou-n-o-af011d8338224796805397cefc20eb38",
           title: "Solving problems with code (or not) (PT-BR)",
         }
+      ]
+    },
+    {
+      title: "Code 4 fun",
+      posts: [
+        {
+          background: 'https://images.unsplash.com/photo-1580910051074-3eb694886505?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1024&q=60',
+          title: "IMEI Generator",
+          type: 'popup',
+          popup:{
+            description: `
+            A basic IMEI generator based on Luhn algorithm
+            `,
+            button: {
+              label: 'Check the website',
+              link: 'https://miguel-rosa.github.io/imei-generator/'
+            },
+            tagTitle: "Used to pratice",
+            tags: ['HTML', 'CSS', 'JavaScript', 'Algorithm', 'Github Pages', 'UI/UX'],
+          }
+        },
+        {
+          background: 'https://images.unsplash.com/photo-1598791318878-10e76d178023?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1024&q=60',
+          title: "nótinha",
+          type: 'popup',
+          popup:{
+            description: `
+            Nótinha is a simple app, minded to be the simplest to-do list that you ever used.<br><br>
+            Developed using Expo, it has a mobile and a frontend that consumes the firebase firestore. 
+            You can create shared notes, with socket update based.
+            `,
+            button: {
+              label: 'Check the website',
+              link: 'https://notinha-miguel-rosa.vercel.app/'
+            },
+            tagTitle: "Used to pratice",
+            tags: ['React Native', 'Firebase Firestore', 'Expo', 'Google SignIn', 'UI/UX'],
+          }
+        },
+        {
+          background: frontShop,
+          title: "Front Shop",
+          type: 'popup',
+          popup:{
+            description: `
+            A simple low-cost store, developed during the pandemic, minded to help small businesses  to sell products and services online through the WhatsApp
+            `,
+            button: {
+              label: 'Check the website',
+              link: 'https://front-store-gamma.vercel.app/'
+            },
+            tagTitle: "Used to pratice",
+            tags: ['React.JS', 'Context API', 'Hosting', 'Digital Products', 'UI/UX'],
+          }
+        },
+        
       ]
     }
   ],

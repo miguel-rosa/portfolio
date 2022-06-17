@@ -144,3 +144,11 @@
     padding-right:0
   }
 }
+
+.popup__left__button {
+  background:black;
+  border-radius:4px;
+  padding: 8px 16px;
+  color:white;
+  text-decoration: none;
+}

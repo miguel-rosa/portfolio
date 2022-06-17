@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Item from '../Item';
 import "./style.css"
-const Popup = ({background, title,subtitle, popup:{description , company, tags, tagTitle} }) => {
+const Popup = ({background, title, subtitle, popup:{description, company, tags, tagTitle, button } }) => {
   const [visible, setVisible] = useState(false);
   return (
     <>
@@ -21,10 +21,13 @@ const Popup = ({background, title,subtitle, popup:{description , company, tags, 
           </div>
           <div className="popup__text">
           <div className="popup__left">
+            {
+              company && (
             <div className="popup__left__card">
               <h4 className="popup__subtitles">Company <br/></h4>
               <span className="popup__left__infos">{company}</span>
-            </div>
+            </div> )
+            }
             <div className="popup__left__card">
               <h4 className="popup__subtitles">{tagTitle}</h4>
               <div className="popup__tags">
@@ -33,7 +36,13 @@ const Popup = ({background, title,subtitle, popup:{description , company, tags, 
                 }
               </div>
               </div>
+              
+              {!!button && 
+              <a className="popup__left__button" href={button.link}>
+                {button.label}
+              </a>}
             </div>
+         
           <p className="popup__description" dangerouslySetInnerHTML={{__html: description}}/>
           </div>
       </div>
