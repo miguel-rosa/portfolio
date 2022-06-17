@@ -7,70 +7,10 @@
   grid-row-gap: 15px;
   margin:20px 0 110px 0;
 }
-
 @media (min-width:1024px) {
   .posts {
     grid-template-columns: repeat(4, 1fr);
     order:3;
-  }
-}
-
-.post {
-  position:relative;
-  height:160px;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  display:flex;
-  align-items: flex-end;
-  padding:15px;
-  border-radius:10px;
-  text-decoration: none;
-  transition: transform .2s ease-in-out ;
-  overflow:hidden;
-  animation: fadeInUp .6s;
-}
-
-@media (min-width:1024px) {
-  .post {
-    height:200px;
-  }
-}
-
-@keyframes fadeInUp {
-  0% {
-    opacity:0;
-    transform:translateY(20px)
-  }
-  100% {
-    opacity:1;
-    transform:translateY(0);
-  }
-}
-
-.post::after {
-  content: linear-gradient(transparent, rgba(0,0,0,0.6) 80%,rgba(0,0,0,0.9));
-  position:absolute;
-  width:100%;
-  height:100%;
-  top:0;
-  left:0;
-}
-
-.post:hover {
-  transform: translateY(-10px);
-}
-
-.title {
-  color:white;
-  z-index: 2;
-  font-size:16px;
-  font-weight: 600;
-}
-
-@media (min-width:1024px) {
-  .title {
-    font-size:18px;
   }
 }
 

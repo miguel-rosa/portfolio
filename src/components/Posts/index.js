@@ -1,4 +1,6 @@
 import React, {useState} from "react";
+import Link from "./components/Link";
+import Popup from "./components/Popup";
 import "./style.css";
 const Posts = ({
   content
@@ -24,21 +26,15 @@ const Posts = ({
         content[selectedContent].posts.map(({
           background,
           link,
-          title
-        }, index) => (
-          <a
-            key={index}
-            target="_blank"
-            rel="noreferrer"
-            style={{ backgroundImage: `url(${background})`}}
-            className="post"
-            href={link}
-          >
-            <h3 className="title">
-              {title}
-            </h3>
-          </a>
-        ))
+          title,
+          type='link',
+          popup,
+        }, index) => {
+          
+          if(type === 'popup') return <Popup subtitle={content[selectedContent].title} key={index} background={background} title={title} popup={popup}/>
+          
+           return <Link key={index} background={background} link={link} title={title} />
+        })
       }
     </section>
     </>
