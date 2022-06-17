@@ -38,7 +38,7 @@ const Popup = ({background, title, subtitle, popup:{description, company, tags, 
               </div>
               
               {!!button && 
-              <a className="popup__left__button" href={button.link}>
+              <a className="popup__left__button" target="_blank" rel="noreferrer" href={button.link}>
                 {button.label}
               </a>}
             </div>
