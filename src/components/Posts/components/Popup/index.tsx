@@ -1,7 +1,16 @@
-import React, { useState } from 'react';
+import React, {FC, useState } from 'react';
+import { PopupType } from '../../typings';
 import Item from '../Item';
 import "./style.css"
-const Popup = ({background, title, subtitle, popup:{description, company, tags, tagTitle, button } }) => {
+
+type PopupProps = {
+  background: string;
+  title: string;
+  subtitle: string;
+  popup: PopupType;
+}
+
+const Popup:FC<PopupProps> = ({background, title, subtitle, popup:{description, company, tags, tagTitle, button } }) => {
   const [visible, setVisible] = useState(false);
   return (
     <>
@@ -12,7 +21,7 @@ const Popup = ({background, title, subtitle, popup:{description, company, tags, 
       <div className="popup">
         
           <button className="popup__close" onClick={() => setVisible(false)}>&times;</button>
-          <div className="popup__image" style={{backgroundImage: `url(${background})` }} alt={title}>
+          <div className="popup__image" style={{backgroundImage: `url(${background})` }}>
             <div className="popup__titles">
             <h2 className="popup__subtitle">{subtitle}</h2>
           <h3 className="popup__title">{title}</h3>
@@ -28,14 +37,21 @@ const Popup = ({background, title, subtitle, popup:{description, company, tags, 
               <span className="popup__left__infos">{company}</span>
             </div> )
             }
-            <div className="popup__left__card">
-              <h4 className="popup__subtitles">{tagTitle}</h4>
-              <div className="popup__tags">
-                {
-                  tags.map( (tag) => <span className="popup__tag">{tag}</span>)
-                }
-              </div>
-              </div>
+            
+              {
+                tags && tags.length > 0 && (
+                  <div className="popup__left__card">
+                  <h4 className="popup__subtitles">{tagTitle}</h4>
+                  <div className="popup__tags">
+                      {
+                        tags.map( (tag) => <span className="popup__tag">{tag}</span>)
+                      }
+                  </div>
+                  </div>
+                )
+              }
+              
+             
               
               {!!button && 
               <a className="popup__left__button" target="_blank" rel="noreferrer" href={button.link}>

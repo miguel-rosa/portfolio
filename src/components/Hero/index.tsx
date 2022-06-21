@@ -1,7 +1,10 @@
-import React from "react";
+import React, { FC } from "react";
 import "./style.css";
+import { HeroType } from "./typings";
 
-const Hero = ({
+type HeroProps = HeroType;
+
+const Hero:FC<HeroProps> = ({
     background,
     picture,
     name,

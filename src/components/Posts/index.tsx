@@ -1,8 +1,14 @@
-import React, {useState} from "react";
+import React, {FC, useState} from "react";
 import Link from "./components/Link";
 import Popup from "./components/Popup";
 import "./style.css";
-const Posts = ({
+import { ContentType } from "./typings";
+
+type PostProps = {
+  content: ContentType[];
+}
+
+const Posts:FC<PostProps> = ({
   content
 }) => {
 
@@ -25,13 +31,12 @@ const Posts = ({
       {
         content[selectedContent].posts.map(({
           background,
-          link,
+          link = '',
           title,
           type='link',
-          popup,
+          popup = null,
         }, index) => {
-          
-          if(type === 'popup') return <Popup subtitle={content[selectedContent].title} key={index} background={background} title={title} popup={popup}/>
+          if(type === 'popup' && !!popup) return <Popup subtitle={content[selectedContent].title} key={index} background={background} title={title} popup={popup}/>
           
            return <Link key={index} background={background} link={link} title={title} />
         })

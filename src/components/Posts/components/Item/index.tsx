@@ -1,7 +1,13 @@
-import React from "react";
+import React, { FC } from "react";
 import "./style.css"
 
-const Item = ({background, title, onClick}) => {
+type ItemProps = {
+  background: string;
+  title: string;
+  onClick?:React.MouseEventHandler;
+}
+
+const Item:FC<ItemProps> = ({background, title, onClick}) => {
   return (
     <div
     style={{ backgroundImage: `url(${background})`}}

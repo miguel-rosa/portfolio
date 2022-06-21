@@ -3,8 +3,17 @@ import profilePicture from "./uploads/profile-picture.jpeg";
 import goBeyond from "./uploads/go-beyond.jpeg";
 import vtexHiringCoders from "./uploads/vtex-hiring-coders.png";
 import frontShop from "./uploads/front-shop.png"
+import { ContentType } from "./components/Posts/typings";
+import { NavigationType } from "./components/Navigation/typings";
+import { HeroType } from "./components/Hero/typings";
 
-export const data = {
+type Data = {
+  user: HeroType;
+  content: ContentType[];
+  navigation: NavigationType;
+}
+
+export const data:Data = {
   user: {
     background: overlayBackground,
     picture: profilePicture,
@@ -190,7 +199,6 @@ export const data = {
   ],
   navigation: {
     whatsapp: "11950465529",
-    phone: "11950465529",
     email: "miguelgoncvs@gmail.com",
     linkedin: "miguelgoncvs",
     github: "miguel-rosa"

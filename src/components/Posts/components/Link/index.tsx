@@ -1,8 +1,14 @@
-import React from 'react';
+import React, {FC} from 'react';
 import Item from '../Item';
 import "./style.css"
 
-const Link = ({background, title, link}) => {
+type LinkProps = {
+  background: string;
+  title: string;
+  link: string;
+}
+
+const Link:FC<LinkProps> = ({background, title, link}) => {
   return (
     <a
     target="_blank"

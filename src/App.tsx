@@ -1,5 +1,5 @@
 import React from "react";
-import { data } from "./data.js";
+import { data } from "./data";
 import "./App.css";
 
 import Hero from "./components/Hero";
