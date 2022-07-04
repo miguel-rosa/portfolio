@@ -198,7 +198,7 @@ export const data:Data = {
     }
   ],
   navigation: {
-    whatsapp: "11950465529",
+    whatsapp: "5511950465529",
     email: "miguelgoncvs@gmail.com",
     linkedin: "miguelgoncvs",
     github: "miguel-rosa"
