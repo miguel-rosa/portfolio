@@ -24,6 +24,34 @@ export const data:Data = {
     {
       title: "Main Work",
       posts: [
+
+        {
+          background: "https://images.unsplash.com/photo-1656747528333-83c58c5eb4e7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=688&q=70",
+          title: "Shoulder",
+          type: 'popup',
+          popup:{
+            description: `
+            Design and develop a new modularized and scalable mobile architecture, that enables the project's core shared structure to grow as a product.<br>
+            Work closely with the clients, designers, managers, product owners, and other developers, supporting decision-making by understanding the project's needs.<br>
+            Structure the development workflow of the mobile team, using the best practices that fit our needs (code review, gitflow, semver, conventional commits, and more) increasing the code quality, and helping the juniors and mid-level developers to improve their deliveries and grow at the company.<br>
+            Release applications to the Apple and Google Play stores, and when need ship over-the-air updates.<br>
+            Implement tools to track metrics about performance, app usage, and crashes, aiming to solve problems before they happen, and improve the app experience.`,
+            tagTitle: "Technologies",
+            tags: ['React Native', 'Firebase', 'TypeScript', 'StyledComponents', 'Git Flow', 'Conventional Commits'],
+            company: 'Shoulder',
+            buttons: [
+              {
+              label: 'iOS App',
+              link: 'https://apps.apple.com/br/app/shoulder-moda-feminina/id1453874871',
+              },
+              {
+                label: 'Android App',
+                link: 'https://play.google.com/store/apps/details?id=com.mobfiq.shoulder&hl=pt',
+              },
+            ],
+          }
+         
+        },
         {
           background: "https://images.unsplash.com/photo-1522338242992-e1a54906a8da?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1024&q=70",
           title: "Época Cosméticos",
@@ -38,6 +66,16 @@ export const data:Data = {
             tagTitle: "Technologies",
             tags: ['React Native', 'TypeScript', 'StyledComponents', 'Git Flow', 'Conventional Commits'],
             company: 'Época Cosméticos from Magazine Luiza',
+            buttons: [
+            {
+              label: 'iOS App',
+              link: 'https://apps.apple.com/br/app/%C3%A9poca-cosm%C3%A9ticos-loja-online/id1418608927',
+            },
+            {
+              label: 'Android App',
+              link: 'https://play.google.com/store/apps/details?id=com.mobfiq.epocacosmeticos&hl=pt_BR',
+            },
+          ],
           }
          
         },
@@ -75,21 +113,21 @@ export const data:Data = {
           }
          
         },
-        {
-          background: "https://images.unsplash.com/photo-1544531586-fde5298cdd40?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1024&q=70",
-          title: "GrowthMasters®",
-          type: 'popup',
-          popup:{
-            description: `
-            Creation of landing pages for events campaigns; <br>
-            Maintenance of system developed using WordPress;Creation of landing pages for events campaigns; Maintenance of system developed using WordPress<br>
-            `,
-            tagTitle: "Technologies",
-            tags: ['CSS', 'JavaScript', 'WordPress'],
-            company: 'GrowthMasters®',
-          }
+        // {
+        //   background: "https://images.unsplash.com/photo-1544531586-fde5298cdd40?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1024&q=70",
+        //   title: "GrowthMasters®",
+        //   type: 'popup',
+        //   popup:{
+        //     description: `
+        //     Creation of landing pages for events campaigns; <br>
+        //     Maintenance of system developed using WordPress;Creation of landing pages for events campaigns; Maintenance of system developed using WordPress<br>
+        //     `,
+        //     tagTitle: "Technologies",
+        //     tags: ['CSS', 'JavaScript', 'WordPress'],
+        //     company: 'GrowthMasters®',
+        //   }
          
-        },
+        // },
       ]
     },
     {
@@ -151,10 +189,10 @@ export const data:Data = {
             description: `
             A basic IMEI generator based on Luhn algorithm
             `,
-            button: {
+            buttons: [{
               label: 'Check the website',
               link: 'https://miguel-rosa.github.io/imei-generator/'
-            },
+            }],
             tagTitle: "Used to pratice",
             tags: ['HTML', 'CSS', 'JavaScript', 'Algorithm', 'Github Pages', 'UI/UX'],
           }
@@ -169,10 +207,10 @@ export const data:Data = {
             Developed using Expo, it has a mobile and a frontend that consumes the firebase firestore. 
             You can create shared notes, with socket update based.
             `,
-            button: {
+            buttons: [{
               label: 'Check the website',
               link: 'https://notinha-miguel-rosa.vercel.app/'
-            },
+            }],
             tagTitle: "Used to pratice",
             tags: ['React Native', 'Firebase Firestore', 'Expo', 'Google SignIn', 'UI/UX'],
           }
@@ -185,10 +223,10 @@ export const data:Data = {
             description: `
             A simple low-cost store, developed during the pandemic, minded to help small businesses  to sell products and services online through the WhatsApp
             `,
-            button: {
+            buttons: [{
               label: 'Check the website',
               link: 'https://front-store-gamma.vercel.app/'
-            },
+            }],
             tagTitle: "Used to pratice",
             tags: ['React.JS', 'Context API', 'Hosting', 'Digital Products', 'UI/UX'],
           }

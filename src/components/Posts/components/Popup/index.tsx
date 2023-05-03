@@ -10,7 +10,7 @@ type PopupProps = {
   popup: PopupType;
 }
 
-const Popup:FC<PopupProps> = ({background, title, subtitle, popup:{description, company, tags, tagTitle, button } }) => {
+const Popup:FC<PopupProps> = ({background, title, subtitle, popup:{description, company, tags, tagTitle, buttons } }) => {
   const [visible, setVisible] = useState(false);
   return (
     <>
@@ -53,10 +53,23 @@ const Popup:FC<PopupProps> = ({background, title, subtitle, popup:{description, 
               
              
               
-              {!!button && 
-              <a className="popup__left__button" target="_blank" rel="noreferrer" href={button.link}>
-                {button.label}
-              </a>}
+       
+
+              {buttons && buttons?.length > 0 ? (
+                <div className="popup__left__buttons">{
+                  buttons.map((button) => (
+                    <a
+                      className="popup__left__button"
+                      target="_blank"
+                      rel="noreferrer"
+                      href={button.link}
+                    >
+                    {button.label}
+                    </a>
+                  ))}
+                  </div>
+              ) : null }
+                
             </div>
          
           <p className="popup__description" dangerouslySetInnerHTML={{__html: description}}/>

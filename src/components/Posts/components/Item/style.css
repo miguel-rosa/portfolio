@@ -1,6 +1,6 @@
 .post {
   position:relative;
-  height:160px;
+  height:200px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -17,7 +17,7 @@
 
 @media (min-width:1024px) {
   .post {
-    height:200px;
+    height:340px;
   }
 }
 

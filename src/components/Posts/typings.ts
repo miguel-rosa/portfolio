@@ -8,10 +8,10 @@ export type PopupType = {
     tagTitle?: string;
     tags?: string[];
     company?: string;
-    button?: {
+    buttons?: {
       link: string;
       label: string;
-    }
+    }[]
 }
 
 export type PostType = {
