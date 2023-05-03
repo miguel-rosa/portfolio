@@ -131,7 +131,7 @@ export const data:Data = {
       ]
     },
     {
-      title: "Company Projects",
+      title: "Volunteer Work",
       posts: [
         {
           background: goBeyond,
