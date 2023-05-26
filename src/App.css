@@ -2,5 +2,14 @@
   display:flex;
   flex-direction: column;
   align-items: center;
-  padding: 20px;
+
+  height: 100vh;
+
+}
+
+.heading { 
+  font-size: 200px;
+  position: absolute;
+  bottom: 0;
+  color: white;
 }

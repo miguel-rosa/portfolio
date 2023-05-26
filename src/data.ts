@@ -5,20 +5,18 @@ import vtexHiringCoders from "./uploads/vtex-hiring-coders.png";
 import frontShop from "./uploads/front-shop.png"
 import { ContentType } from "./components/Posts/typings";
 import { NavigationType } from "./components/Navigation/typings";
-import { HeroType } from "./components/Hero/typings";
+import { UserType } from "./components/Header/typings";
 
 type Data = {
-  user: HeroType;
+  user: UserType;
   content: ContentType[];
   navigation: NavigationType;
 }
 
 export const data:Data = {
   user: {
-    background: overlayBackground,
-    picture: profilePicture,
-    name: "Miguel Gonçalves",
-    description: "Software Engineer"
+    name: "Miguel Rosa",
+
   },
   content: [
     {
@@ -96,23 +94,23 @@ export const data:Data = {
           }
          
         },
-        {
-          background: "https://images.unsplash.com/photo-1517976487492-5750f3195933?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1024&q=70",
-          title: "Upsites Digital",
-          type: 'popup',
-          popup:{
-            description: `
-            Development of digital products using WordPress;<br>
-            Creation of UI components using HTML, CSS, and JavaScript;<br>
-            Implementation of SEO on-page;<br>
-            Support and maintenance of products developed at the SAAS platform of the company;<br>
-            Build pages through the WordPress Headless API REST;<br>`,
-            tagTitle: "Technologies",
-            tags: ['CSS', 'JavaScript', 'SEO On-Page', 'PHP', 'WordPress'],
-            company: 'Upsites Digital',
-          }
+        // {
+        //   background: "https://images.unsplash.com/photo-1628126235206-5260b9ea6441?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80",
+        //   title: "Upsites Digital",
+        //   type: 'popup',
+        //   popup:{
+        //     description: `
+        //     Development of digital products using WordPress;<br>
+        //     Creation of UI components using HTML, CSS, and JavaScript;<br>
+        //     Implementation of SEO on-page;<br>
+        //     Support and maintenance of products developed at the SAAS platform of the company;<br>
+        //     Build pages through the WordPress Headless API REST;<br>`,
+        //     tagTitle: "Technologies",
+        //     tags: ['CSS', 'JavaScript', 'SEO On-Page', 'PHP', 'WordPress'],
+        //     company: 'Upsites Digital',
+        //   }
          
-        },
+        // },
         // {
         //   background: "https://images.unsplash.com/photo-1544531586-fde5298cdd40?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1024&q=70",
         //   title: "GrowthMasters®",
@@ -149,7 +147,7 @@ export const data:Data = {
           }         
         },
         {
-          background: vtexHiringCoders,
+          background: "https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=764&q=80",
           title: "VTEX Hiring Coders",
           type: 'popup',
           popup:{
@@ -167,12 +165,12 @@ export const data:Data = {
       title: "Articles",
       posts: [
         {
-          background: "https://images.unsplash.com/photo-1534972195531-d756b9bfa9f2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1024&q=60",
+          background: "https://images.unsplash.com/photo-1530893609608-32a9af3aa95c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=764&q=80",
           link: "https://jealous-pint-4b4.notion.site/Implementando-LiveScale-com-VTEX-IO-b275cf25ac214e88a7dced94bf391f30",
           title: "Implementing LiveScale with VTEX IO (PT-BR)",
         },
         {
-          background: "https://images.unsplash.com/photo-1607798748738-b15c40d33d57?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1024&q=60",
+          background: "https://images.unsplash.com/photo-1535957998253-26ae1ef29506?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=736&q=80",
           link: "https://jealous-pint-4b4.notion.site/Otimizando-processos-com-c-digo-ou-n-o-af011d8338224796805397cefc20eb38",
           title: "Solving problems with code (or not) (PT-BR)",
         }
@@ -198,7 +196,7 @@ export const data:Data = {
           }
         },
         {
-          background: 'https://images.unsplash.com/photo-1598791318878-10e76d178023?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1024&q=60',
+          background: 'https://images.unsplash.com/photo-1518976024611-28bf4b48222e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=685&q=80',
           title: "nótinha",
           type: 'popup',
           popup:{
@@ -216,7 +214,7 @@ export const data:Data = {
           }
         },
         {
-          background: frontShop,
+          background: "https://images.unsplash.com/photo-1556742521-9713bf272865?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80",
           title: "Front Shop",
           type: 'popup',
           popup:{

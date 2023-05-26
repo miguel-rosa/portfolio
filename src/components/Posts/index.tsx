@@ -9,24 +9,14 @@ type PostProps = {
 }
 
 const Posts:FC<PostProps> = ({
-  content
+  content,
+
 }) => {
 
   const [selectedContent, setSelectedContent] = useState(0);
   
   return (
-    <>
-    <nav className="tabs">
-      {content.map(({title}, index) => (
-        <button
-          key={index}
-          onClick={() => setSelectedContent(index)}
-          className={`tab ${index === selectedContent ? "tab--active" : "tab--inactive"}`}
-        >
-          {title}
-        </button>
-      ))}
-    </nav>
+    <>  
     <section className="posts">
       {
         content[selectedContent].posts.map(({
@@ -42,6 +32,17 @@ const Posts:FC<PostProps> = ({
         })
       }
     </section>
+    <nav className="tabs">
+      {content.map(({title}, index) => (
+        <button
+          key={index}
+          onClick={() => setSelectedContent(index)}
+          className={`tab ${index === selectedContent ? "tab--active" : "tab--inactive"}`}
+        >
+          {title}
+        </button>
+      ))}
+    </nav>
     </>
   )
 };

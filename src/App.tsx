@@ -2,16 +2,14 @@ import React from "react";
 import { data } from "./data";
 import "./App.css";
 
-import Hero from "./components/Hero";
 import Posts from "./components/Posts";
-import Navigation from "./components/Navigation";
+import Header from "./components/Header";
 
 const App = () => {
   return (
    <main className="main">
-      <Hero {...data.user}/>
-      <Navigation {...data.navigation}/>
-      <Posts content={data.content}/>
+      <Header user={data.user} navigation={data.navigation}/>
+      <Posts content={data.content} />
    </main>
   );
 }

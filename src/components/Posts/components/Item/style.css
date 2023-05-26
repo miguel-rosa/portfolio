@@ -1,30 +1,38 @@
 .post {
   position:relative;
-  height:200px;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  height: 500px;
+  width: 300px;
   display:flex;
   align-items: flex-end;
   padding:15px;
-  border-radius:10px;
+  border-radius: 26px;
   text-decoration: none;
-  transition: transform .2s ease-in-out ;
+  transition: all .6s ease-in-out ;
   overflow:hidden;
   animation: fadeInUp .6s;
   cursor: pointer;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  transform: scale(1);
+  
+  justify-content: center;
+  align-items: flex-end;
 }
 
-@media (min-width:1024px) {
+@media (min-width: 1024px) {
   .post {
-    height:340px;
+    height: 570px;
+    width: unset
   }
 }
+
+
 
 @keyframes fadeInUp {
   0% {
     opacity:0;
-    transform:translateY(20px)
+    scale:translateY(20px)
   }
   100% {
     opacity:1;
@@ -42,19 +50,22 @@
 }
 
 .post:hover {
-  transform: translateY(-10px);
+  transform: scale(1.1);
+}
+.post {
+
+  background-size: 150%;
+}
+
+.post:hover {
+  background-size: 155%;
 }
 
 .title {
   color:white;
   z-index: 2;
-  font-size:16px;
+  font-size: 22px;
+
   font-weight: 600;
   text-decoration: none;
-}
-
-@media (min-width:1024px) {
-  .title {
-    font-size:18px;
-  }
 }
